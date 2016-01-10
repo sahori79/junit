@@ -1,0 +1,8 @@
+The example above showcases the different unique usage of Mockito. Aside from just mocking objects, it also perfectly compliments what we call “behaviour driven” test cases. This means that the test case is aimed at testing the behaviour or any method calls within the services aside from the output itself.
+
+Let’s go over each method:
+
+testSimpleInt – the test case creates a mock class and calls the method. It enforces the method to use 43 as it’s return. This is then tested via an assertEquals method as shown.
+testMoreThanOneReturnValue – the cases mocked an iterator class and sets a new value for the first record. The example shown concatenates two new strings on the 1st element. This record is then tested via an assertEquals method.
+testReturnValueInDependentOnMethodParameter – The test case shows how we can dynamically use other results even in our comparison logic. In this example, we forced the comparisons to return values that are then tested via anassertEquals method.
+testVerify – the test case showcases how we can test the behaviour of a method within the class. It tests how many calls were made to the method and if there are any changes to the return types. This is a powerful feature because not only allows developers to test results, but also the behaviour of a specific service can be tested.
